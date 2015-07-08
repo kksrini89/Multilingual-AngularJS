@@ -1,16 +1,4 @@
-﻿//(function () {
-//    angular.module('MultilingualApp').controller('RetailerController', ['$scope', '$translatePartialLoader', '$translate', function ($scope, $translatePartialLoader, $translate) {
-//        $translatePartialLoader.addPart('Retailer');
-//        var isPartAvailable = $translatePartialLoader.isPartAvailable('Retailer');
-//        if (isPartAvailable) {
-//            $translate('Main_RetailerContent').then(function (translatedValue) {
-//                $scope.content = translatedValue;
-//                console.log($scope.content);
-//            });
-//        }
-//    }]);
-//})();
-(function () {
+﻿(function () {
     angular.module('MultilingualApp').controller('RetailerController', ['$rootScope', '$translatePartialLoader', '$translate', function ($rootScope, $translatePartialLoader, $translate) {
         $translatePartialLoader.addPart('Retailer');
         var isPartAvailable = $translatePartialLoader.isPartAvailable('Main');
